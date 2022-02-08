@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">project_test_1.1</string>
     <string name="todo">TODO</string>
+    <string name="textView_test">textView_test</string>
+    <string name="string_textview_test" />
 </resources>
