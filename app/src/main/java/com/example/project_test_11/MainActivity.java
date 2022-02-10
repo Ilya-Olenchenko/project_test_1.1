@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         int h=(new Date()).getHours();
         if (h > 3 && h <  12) helloTextView.setText("Доброе утро");
         if (h > 11 && h <  19) helloTextView.setText("Добрый день");
-        if (h > 18 && h <  24) helloTextView.setText("Добрый вечер");
-        if (h > 23 || h <  4 ) helloTextView.setText("Доброй ночи");
+        if (h > 18 && h <  22) helloTextView.setText("Добрый вечер");
+        if (h > 22 || h <  4 ) helloTextView.setText("Доброй ночи");
 
         new Handler().postDelayed(new Runnable() {
             @Override
