@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.TextView;
+
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +15,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+
+
+        final TextView helloTextView = (TextView) findViewById(R.id.tvTop);
+
+        int h=(new Date()).getHours();
+        if (h > 3 && h <  12) helloTextView.setText("Доброе утро");
+        if (h > 11 && h <  19) helloTextView.setText("Добрый день");
+        if (h > 18 && h <  24) helloTextView.setText("Добрый вечер");
+        if (h > 23 || h <  4 ) helloTextView.setText("Доброй ночи");
 
         new Handler().postDelayed(new Runnable() {
             @Override

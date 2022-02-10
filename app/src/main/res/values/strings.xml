@@ -3,4 +3,5 @@
     <string name="todo">TODO</string>
     <string name="textView_test">textView_test</string>
     <string name="string_textview_test" />
+    <string name="TextSplash">Доброе утро</string>
 </resources>
