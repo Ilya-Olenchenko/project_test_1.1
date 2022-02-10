@@ -28,7 +28,6 @@
         android:layout_height="match_parent"
         android:fontFamily="@font/gilroy_bold"
         android:gravity="center_horizontal|fill_vertical"
-        android:text="@string/TextSplash"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:translationY="100dp" />
