@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import java.util.Date;
@@ -21,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView helloTextView = findViewById(R.id.tvTop);
 
+        TextView tv;
+        Animation anim;
+
+        anim = AnimationUtils.loadAnimation(this,R.anim.word_anim);
+        tv = (TextView) findViewById(R.id.tvTop);
+        tv.startAnimation(anim);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -31,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 if (h >= 18 && h <=  22) helloTextView.setText(R.string.TextSplash_evening);
                 if (h >= 23 || h <=  3 ) helloTextView.setText(R.string.TextSplash_night);
             }
-        },1000);
+        },500);
 
 
         new Handler().postDelayed(new Runnable() {
