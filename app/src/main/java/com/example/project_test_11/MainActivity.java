@@ -8,22 +8,31 @@ import android.os.Handler;
 import android.widget.TextView;
 
 import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-
         final TextView helloTextView = findViewById(R.id.tvTop);
 
-        int h=(new Date()).getHours();
-        if (h > 3 && h <  12) helloTextView.setText("Доброе утро");
-        if (h > 11 && h <  19) helloTextView.setText(R.string.TextSplash_day);
-        if (h > 18 && h <  22) helloTextView.setText("Добрый вечер");
-        if (h > 22 || h <  4 ) helloTextView.setText("Доброй ночи");
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                int h=(new Date()).getHours();
+                if (h >= 4 && h <=  11) helloTextView.setText(R.string.TextSplash_morning);
+                if (h >= 12 && h <=  17) helloTextView.setText(R.string.TextSplash_day);
+                if (h >= 18 && h <=  22) helloTextView.setText(R.string.TextSplash_evening);
+                if (h >= 23 || h <=  3 ) helloTextView.setText(R.string.TextSplash_night);
+            }
+        },1000);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -32,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                 finish();
             }
-        },5000);
+        },3000);
     }
 }

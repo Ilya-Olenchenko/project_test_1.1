@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TextSplash_morning">Доброе утро</string>
+    <string name="TextSplash_day">Добрый день</string>
+    <string name="TextSplash_evening">Добрый вечер</string>
+    <string name="TextSplash_night">Доброй ночи</string>
+</resources>

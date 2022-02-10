@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="TextSplash_day" translatable="false">Добрый день</string>
+    <string name="TextSplash_morning">Good morning</string>
+    <string name="TextSplash_day">Good day</string>
+    <string name="TextSplash_evening">Good evening</string>
+    <string name="TextSplash_night">Good night</string>
 </resources>

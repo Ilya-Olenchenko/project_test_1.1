@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Detox</string>
     <string name="gradient_logo">gradient_logo</string>
-    <string name="textView_test">textView_test</string>
-    <string name="string_textview_test" />
     <string name="TextSplash">Доброе утро</string>
     <string name="imageview_logo">imageview_logo</string>
 </resources>
