@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">project_test_1.1</string>
-    <string name="todo">TODO</string>
+    <string name="app_name">Detox</string>
+    <string name="gradient_logo">gradient_logo</string>
     <string name="textView_test">textView_test</string>
     <string name="string_textview_test" />
     <string name="TextSplash">Доброе утро</string>
+    <string name="imageview_logo">imageview_logo</string>
 </resources>

@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.splash);
 
 
-        final TextView helloTextView = (TextView) findViewById(R.id.tvTop);
+        final TextView helloTextView = findViewById(R.id.tvTop);
 
         int h=(new Date()).getHours();
         if (h > 3 && h <  12) helloTextView.setText("Доброе утро");

@@ -9,7 +9,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/todo"
+        android:contentDescription="@string/gradient_logo"
         app:srcCompat="@drawable/gradient_logo"
         tools:ignore="ImageContrastCheck" />
 
@@ -18,9 +18,9 @@
         android:layout_width="200dp"
         android:layout_height="250dp"
         android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/imageview_logo"
         android:translationY="100dp"
-        app:srcCompat="@drawable/detox_logo_mdpi"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/detox_logo_mdpi" />
 
     <TextView
         android:id="@+id/tvTop"
