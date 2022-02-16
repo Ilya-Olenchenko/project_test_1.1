@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        final TextView helloTextView = findViewById(R.id.tvTop);
+        final TextView helloTextView = findViewById(R.id.Header);
 
         TextView tv;
         Animation anim;
 
         anim = AnimationUtils.loadAnimation(this,R.anim.word_anim);
-        tv = (TextView) findViewById(R.id.tvTop);
+        tv = (TextView) findViewById(R.id.Header);
         tv.startAnimation(anim);
 
 
