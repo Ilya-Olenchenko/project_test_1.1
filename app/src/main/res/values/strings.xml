@@ -5,4 +5,7 @@
     <string name="imageview_logo">imageview_logo</string>
     <string name="home_icon" translatable="false">Home</string>
     <string name="burger_icon" translatable="false">Burger</string>
+    <string name="dream_icon">Dream</string>
+    <string name="music_icon">Music</string>
+    <string name="statistic_icon">Statistic</string>
 </resources>
