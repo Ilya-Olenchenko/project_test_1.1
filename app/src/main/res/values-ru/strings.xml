@@ -3,4 +3,9 @@
     <string name="gradient_logo">gradient_logo</string>
     <string name="TextSplash">Доброе утро</string>
     <string name="imageview_logo">imageview_logo</string>
+    <string name="home_icon" translatable="false">Home</string>
+    <string name="burger_icon" translatable="false">Burger</string>
+    <string name="dream_icon" translatable="false">Dream</string>
+    <string name="music_icon" translatable="false">Music</string>
+    <string name="statistic_icon" translatable="false">Statistic</string>
 </resources>

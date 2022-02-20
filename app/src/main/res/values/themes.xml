@@ -14,7 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-
-    <item name="android:windowBackground">@drawable/gradient_logo</item>
+        <item name="android:windowBackground">@drawable/gradient_logo</item>
     </style>
 </resources>
