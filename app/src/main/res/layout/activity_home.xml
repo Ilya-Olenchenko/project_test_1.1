@@ -32,7 +32,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_home"
-            tools:ignore="ImageContrastCheck" />
+            tools:ignore="ImageContrastCheck,OnClick"
+            android:onClick="home_click"
+            />
 
         <ImageView
             android:id="@+id/imageView_dream_icon"
@@ -46,7 +48,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageView_statistic_icon"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_dream"
-            tools:ignore="MissingConstraints,ImageContrastCheck" />
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
+            android:onClick="dream_click"/>
 
         <ImageView
             android:id="@+id/imageView_music_icon"
@@ -60,7 +63,9 @@
             app:layout_constraintStart_toEndOf="@+id/imageView_dream_icon"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_music"
-            tools:ignore="MissingConstraints,ImageContrastCheck" />
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
+            android:onClick="music_click"
+            />
 
         <ImageView
             android:id="@+id/imageView_statistic_icon"
@@ -74,7 +79,9 @@
             app:layout_constraintStart_toEndOf="@+id/imageView_home_icon"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_statistic"
-            tools:ignore="MissingConstraints,ImageContrastCheck" />
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
+            android:onClick="statistic_click"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -98,7 +105,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_burger"
-            tools:ignore="ImageContrastCheck,MissingConstraints" />
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
+            android:onClick="burger_click"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

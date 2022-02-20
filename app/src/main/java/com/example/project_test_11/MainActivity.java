@@ -10,8 +10,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
