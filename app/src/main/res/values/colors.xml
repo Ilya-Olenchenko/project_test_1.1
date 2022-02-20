@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey_100">#99000000</color>
+    <color name="down_panel_color">#009D9D</color>
+    <color name="background_home">#cccccc</color>
+
 </resources>
