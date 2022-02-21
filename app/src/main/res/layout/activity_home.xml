@@ -27,14 +27,13 @@
             android:layout_marginStart="60dp"
             android:layout_marginEnd="30dp"
             android:contentDescription="@string/home_icon"
+            android:onClick="home_click"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView_statistic_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_home"
-            tools:ignore="ImageContrastCheck,OnClick"
-            android:onClick="home_click"
-            />
+            tools:ignore="ImageContrastCheck,OnClick,TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView_dream_icon"
@@ -43,13 +42,13 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:contentDescription="@string/dream_icon"
+            android:onClick="dream_click"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView_music_icon"
             app:layout_constraintStart_toEndOf="@+id/imageView_statistic_icon"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_dream"
-            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
-            android:onClick="dream_click"/>
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView_music_icon"
@@ -58,14 +57,13 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="60dp"
             android:contentDescription="@string/music_icon"
+            android:onClick="music_click"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView_dream_icon"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_music"
-            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
-            android:onClick="music_click"
-            />
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView_statistic_icon"
@@ -74,14 +72,13 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:contentDescription="@string/statistic_icon"
+            android:onClick="statistic_click"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView_dream_icon"
             app:layout_constraintStart_toEndOf="@+id/imageView_home_icon"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_statistic"
-            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
-            android:onClick="statistic_click"
-            />
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick,TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -101,12 +98,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="320dp"
             android:contentDescription="@string/burger_icon"
+            android:onClick="burger_click"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_burger"
-            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick"
-            android:onClick="burger_click"/>
+            tools:ignore="ImageContrastCheck,MissingConstraints,OnClick,TouchTargetSizeCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
