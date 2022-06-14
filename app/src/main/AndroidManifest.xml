@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_test_11">
         <activity
+            android:name=".MainNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_main_navigation" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/SplashTheme">
@@ -18,15 +22,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-    </activity>
+        </activity>
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
