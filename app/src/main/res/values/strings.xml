@@ -10,7 +10,9 @@
     <string name="statistic_icon" translatable="false">Statistic</string>
 
     <string name="title_activity_main_navigation" translatable="false">MainNavigation</string>
+
     <string name="title_home" translatable="false">Home</string>
-    <string name="title_dashboard" translatable="false">Dashboard</string>
-    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="title_sleep" translatable="false">Sleep</string>
+    <string name="title_music" translatable="false">Music</string>
+    <string name="title_statistics" translatable="false">Statistics</string>
 </resources>

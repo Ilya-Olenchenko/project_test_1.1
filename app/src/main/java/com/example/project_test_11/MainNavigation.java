@@ -1,7 +1,6 @@
 package com.example.project_test_11;
 
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +10,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 
 import com.example.project_test_11.databinding.ActivityMainNavigationBinding;
-import com.example.project_test_11.ui.dashboard.DashboardFragment;
+import com.example.project_test_11.ui.sleep.SleepFragment;
 import com.example.project_test_11.ui.home.HomeFragment;
-import com.example.project_test_11.ui.notifications.NotificationsFragment;
+import com.example.project_test_11.ui.notifications.MusicFragment;
+import com.example.project_test_11.ui.statistics.StatisticsFragment;
 
 public class MainNavigation extends AppCompatActivity {
 
@@ -32,10 +32,13 @@ public class MainNavigation extends AppCompatActivity {
                     replaceFragment(new HomeFragment());
                     break;
                 case R.id.navigation_dashboard:
-                    replaceFragment(new DashboardFragment());
+                    replaceFragment(new SleepFragment());
                     break;
-                case R.id.navigation_notifications:
-                    replaceFragment(new NotificationsFragment());
+                case R.id.navigation_music:
+                    replaceFragment(new MusicFragment());
+                    break;
+                case R.id.navigation_statistics:
+                    replaceFragment(new StatisticsFragment());
                     break;
             }
 

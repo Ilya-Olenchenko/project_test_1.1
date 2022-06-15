@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.project_test_11.databinding.FragmentNotificationsBinding;
+import com.example.project_test_11.databinding.FragmentMusicBinding;
 
-public class NotificationsFragment extends Fragment {
+public class MusicFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentMusicBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        MusicViewModel musicViewModel =
+                new ViewModelProvider(this).get(MusicViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentMusicBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textMusic;
+        musicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

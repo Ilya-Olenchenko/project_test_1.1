@@ -8,4 +8,9 @@
     <string name="dream_icon" translatable="false">Dream</string>
     <string name="music_icon" translatable="false">Music</string>
     <string name="statistic_icon" translatable="false">Statistic</string>
+
+    <string name="title_home" translatable="false">Нове</string>
+    <string name="title_sleep" translatable="false">Сон</string>
+    <string name="title_music" translatable="false">Музика</string>
+    <string name="title_statistics" translatable="false">Статистика</string>
 </resources>
