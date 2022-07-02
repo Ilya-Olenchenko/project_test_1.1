@@ -24,8 +24,8 @@ public class MusicFragment extends Fragment {
         binding = FragmentMusicBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textMusic;
-        musicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        //final TextView textView = binding.imageView4;
+        //musicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

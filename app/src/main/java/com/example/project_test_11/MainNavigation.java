@@ -21,11 +21,11 @@ public class MainNavigation extends AppCompatActivity {
 
 
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         binding = ActivityMainNavigationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
+
         binding.navView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.navigation_home:
@@ -51,6 +51,4 @@ public class MainNavigation extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
-
-
 }

@@ -15,4 +15,5 @@
     <string name="title_sleep" translatable="false">Sleep</string>
     <string name="title_music" translatable="false">Music</string>
     <string name="title_statistics" translatable="false">Statistics</string>
+    <string name="curtain">curtain</string>
 </resources>
