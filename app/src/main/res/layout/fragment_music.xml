@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.notifications.MusicFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:elevation="2dp"
+        android:text="@string/title_music"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/curtain"
@@ -16,18 +29,20 @@
         android:elevation="1dp"
         android:src="@drawable/curtain_music"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck" />
 
+
     <ScrollView
-        android:layout_width="356dp"
-        android:layout_height="515dp"
-        android:layout_weight="3"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
@@ -35,79 +50,316 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imvCircular"
+                android:id="@+id/imvCircular0"
                 android:layout_width="170dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/music_music_image_4"
                 app:layout_constraintEnd_toStartOf="@+id/imvCircularWithStroke"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
 
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow tools:ignore="UselessParent">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCircular1"
+                        android:layout_width="168dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/music_music_image_4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imvCircular2"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/music_music_image_4"
-                app:layout_constraintEnd_toStartOf="@+id/imvCircularWithStroke"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+                    <TableLayout>
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:maxWidth="200dp"
+                            android:text="Всесвіт"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imvCircular3"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/music_music_image_4"
-                app:layout_constraintEnd_toStartOf="@+id/imvCircularWithStroke"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:maxWidth="200dp"
+                            android:text="Планета сирена"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="left"/>
+                    </TableLayout>
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imvCircular4"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/music_music_image_4"
-                app:layout_constraintEnd_toStartOf="@+id/imvCircularWithStroke"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+                </TableRow>
+            </TableLayout>
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imvCircular5"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/music_music_image_4"
-                app:layout_constraintEnd_toStartOf="@+id/imvCircularWithStroke"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imvCircular6"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/music_music_image_4"
-                app:layout_constraintEnd_toStartOf="@+id/imvCircularWithStroke"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow tools:ignore="UselessParent">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCircular2"
+                        android:layout_width="168dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/music_music_image_3_"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+
+                    <TableLayout>
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:maxWidth="200dp"
+                            android:text="Лісова прогулянка"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:maxWidth="200dp"
+                            android:text="Возз'єднання з природою"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </TableLayout>
+
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow tools:ignore="UselessParent">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCircular3"
+                        android:layout_width="168dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/music_music_image_5"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+
+                    <TableLayout>
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:maxWidth="200dp"
+                            android:text="Безтурботність"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:maxWidth="200dp"
+                            android:text="Умиротворення свідомості"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </TableLayout>
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow tools:ignore="UselessParent">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCircular4"
+                        android:layout_width="168dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/music_music_image_1"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+
+                    <TableLayout>
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:maxWidth="200dp"
+                            android:text="Політ"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:maxWidth="200dp"
+                            android:text="Набір стихій"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </TableLayout>
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow tools:ignore="UselessParent">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCircular5"
+                        android:layout_width="168dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/music_music_image_2"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+
+                    <TableLayout>
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:maxWidth="200dp"
+                            android:text="Прогулянка по чомусь там"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:maxWidth="200dp"
+                            android:text="Не бачу тексту"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </TableLayout>
+
+                </TableRow>
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow tools:ignore="UselessParent">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCircular6"
+                        android:layout_width="168dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/music_music_image_4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+
+                    <TableLayout>
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:maxWidth="200dp"
+                            android:text="Всесвіт"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView62"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:maxWidth="200dp"
+                            android:text="Планета сирена"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="left"/>
+                    </TableLayout>
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow tools:ignore="UselessParent">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCircular7"
+                        android:layout_width="168dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/music_music_image_3_"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/SpecificCornerRounded" />
+
+                    <TableLayout>
+                        <TextView
+                            android:id="@+id/textView71"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:maxWidth="200dp"
+                            android:text="ОГо"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView72"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:maxWidth="200dp"
+                            android:text="Ти тут"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="left"/>
+                    </TableLayout>
+
+                </TableRow>
+            </TableLayout>
 
         </LinearLayout>
     </ScrollView>
