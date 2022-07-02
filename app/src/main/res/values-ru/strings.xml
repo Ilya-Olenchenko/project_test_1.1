@@ -14,4 +14,5 @@
     <string name="title_music" translatable="false">Музыка</string>
     <string name="title_statistics" translatable="false">Статистика</string>
     <string name="curtain">curtain</string>
+    <string name="music_music_image_4">music_music_image_4</string>
 </resources>

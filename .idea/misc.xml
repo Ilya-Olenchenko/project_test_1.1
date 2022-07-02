@@ -18,13 +18,14 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/drawable/ic_music.xml" value="0.1475" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/drawable/ic_statistic.xml" value="0.2475" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/drawable/item_navigationview.xml" value="0.1485" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/drawable/roundcorner.xml" value="0.269" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/drawable/transparent _bac_background.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/activity_home.xml" value="0.176" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/activity_main_navigation.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/activity_main_navigation.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/fragment_dashboard.xml" value="0.22573749465583584" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/fragment_home.xml" value="0.22573749465583584" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/fragment_music.xml" value="0.152" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/fragment_music.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/fragment_notifications.xml" value="0.22573749465583584" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/fragment_sleep.xml" value="0.22573749465583584" />
         <entry key="..\:/Users/user/AndroidStudioProjects/project_test_11/app/src/main/res/layout/fragment_statistics.xml" value="0.22573749465583584" />
